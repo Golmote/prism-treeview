@@ -31,7 +31,7 @@ Include the CSS file after Prism theme, and the JS file after Prism core.
 |   |-- style.css
 |   `-- index.html
 |-- [dir] music and movies
-|   |-- great-song.mp2
+|   |-- great-song.mp3
 |   |-- S01E02.new.episode.avi
 |   |-- S01E02.new.episode.nfo
 |   `-- track 1.cda
@@ -46,4 +46,4 @@ Include the CSS file after Prism theme, and the JS file after Prism core.
 ```
 
 ## Result
-![Result](http://puu.sh/dtrYe/d148bf1b01.png)
+![Result](http://puu.sh/dtsyQ/3924fc9670.png)
