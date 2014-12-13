@@ -3,6 +3,8 @@ prism-treeview
 
 Treeview language definition for [Prism](https://github.com/LeaVerou/prism). Based on [kbjr](https://github.com/kbjr)'s initial idea (https://github.com/LeaVerou/prism/issues/193)
 
+Icons are from [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+
 ## Usage
 
 Include the CSS file after Prism theme, and the JS file after Prism core.
