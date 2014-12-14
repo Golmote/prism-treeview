@@ -4,15 +4,15 @@ Prism.languages.treeview = {
 		inside: {
 			"entry-line": [
 				{
-					pattern: /\|-- /,
+					pattern: /\|-- |├── /,
 					alias: "line-h"
 				},
 				{
-					pattern: /\|   /,
+					pattern: /\|   |│   /,
 					alias: "line-v"
 				},
 				{
-					pattern: /`-- */,
+					pattern: /`-- |└── /,
 					alias: "line-v-last"
 				},
 				{
@@ -20,9 +20,12 @@ Prism.languages.treeview = {
 					alias: "line-v-gap"
 				}
 			],
-			//"entry-line-break": /\n/,
 			"entry-name": {
-				pattern: /.*\S.*/
+				pattern: /.*\S.*/,
+				inside: {
+					// symlink
+					"operator": / -> /,
+				}
 			}
 		}
 	}

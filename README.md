@@ -31,6 +31,7 @@ Include the CSS file after Prism theme, and the JS file after Prism core.
 |   |        `-- [dir] going deeper
 |   |            `-- .secret_file
 |   |-- style.css
+|   |-- [dir] symlink -> /some/other/location
 |   `-- index.html
 |-- [dir] music and movies
 |   |-- great-song.mp3
@@ -49,3 +50,17 @@ Include the CSS file after Prism theme, and the JS file after Prism core.
 
 ## Result
 ![Result](http://puu.sh/dtsyQ/3924fc9670.png)
+
+## Alternative syntax
+
+You can also use the following box-drawing characters to represent the tree : `─│└├`
+
+```html
+<pre><code class="language-treeview">
+[dir] root_folder
+├── [dir] a first folder
+│   ├── holidays.mov
+│   ├── javascript-file.js
+│   └── some_picture.jpg
+└── etc.
+</code></pre>
