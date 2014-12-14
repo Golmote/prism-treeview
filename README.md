@@ -49,7 +49,7 @@ Include the CSS file after Prism theme, and the JS file after Prism core.
 ```
 
 ## Result
-![Result](http://puu.sh/dtsyQ/3924fc9670.png)
+![Result](http://puu.sh/duQ5b/f02738ba86.png)
 
 ## Alternative syntax
 
