@@ -38,12 +38,16 @@ Prism.hooks.add('wrap', function(env) {
 			env.content = env.content.replace(/\n/g,'')+'<br />';
 		}
 		if(env.type === 'entry-name') {
-			var reg = /^\[([^\]]+)\] /,
-				match = reg.exec(env.content);
-			if(match) {
-				env.content = env.content.replace(reg,'');
-				env.classes.push(match[1] === 'dir' ? match[1] : ('ext-' + match[1]));
+			if(/(^|[^\\])\/\s*$/.test(env.content)) {
+				env.content = env.content.slice(0,-1);
+				// This is a folder
+				env.classes.push('dir');
 			} else {
+
+				if(/(^|[^\\])[=*|]\s*$/.test(env.content)) {
+					env.content = env.content.slice(0,-1);
+				}
+				
 				var parts = env.content.toLowerCase().split('.');
 				while (parts.length > 1) {
 					parts.shift();
@@ -51,6 +55,7 @@ Prism.hooks.add('wrap', function(env) {
 					env.classes.push('ext-' + parts.join('-'));
 				}
 			}
+
 			if(env.content.charAt(0)==='.') {
 				env.classes.push('dotfile');
 			}
