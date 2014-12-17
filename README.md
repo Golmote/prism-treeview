@@ -67,6 +67,5 @@ root_folder/
 |   ├── manual.pdf
 |   ├── document.docx
 |   └── presentation.ppt
-|       └── test   
 └── etc.
 </code></pre>
