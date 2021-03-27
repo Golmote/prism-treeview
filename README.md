@@ -10,6 +10,8 @@ Icons are from [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 Include the CSS file after Prism theme, and the JS file after Prism core.
 You may use `tree -F` to get a compatible text structure.
 
+It may be helpful to specify the charset in the `tree` command ie. `tree -F --charset=ascii` for some directory structures.
+
 ## Example code
 
 ```html
