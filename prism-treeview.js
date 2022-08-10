@@ -54,10 +54,10 @@ Prism.hooks.add('wrap', function(env) {
 					// Ex. 'foo.min.js' would become '<span class="token keyword ext-min-js ext-js">foo.min.js</span>'
 					env.classes.push('ext-' + parts.join('-'));
 				}
-			}
-
-			if(env.content.charAt(0)==='.') {
-				env.classes.push('dotfile');
+				
+				if(env.content.charAt(0)==='.') {
+					env.classes.push('dotfile');
+				}
 			}
 		}
 	}
